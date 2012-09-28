@@ -3,12 +3,40 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TobbyMaps</title>
+<link rel="stylesheet" type="text/css" href="css/lib/jqueryui/1.8/themes/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
 
-<script type="text/javascript" src="../lib/jquery/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="../lib/jqueryui/1.8.6/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../lib/jquery.layout.min-1.2.0.js"></script>
+
+<script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/lib/jqueryui/1.8.6/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.layout.min-1.2.0.js"></script>
+<script type="text/javascript" src="js/tbm/layout.js"></script>
 </head>
 <body>
+	<div class="ui-layout-north edugis-heading">
+		<div class="heading-top">
+			<a href="."><img src="images/edugislogo.png" /></a>
+			<div id="geo-search"></div>
+		</div>
+		<div class="heading-bottom">
+			<div class="h-b-west">左侧栏</div>
+			<span id="close-west" class="ui-layout-button-close"></span> <span
+				id="open-west" class="ui-layout-button-close"></span> <span
+				class="h-b-middle"> <span id="edugishelp">帮助</span> | <span id="permalinkbuilder"
+				title="permalink voor deze kaartuitsnede">连接</span></span> <span
+				id="close-east" class="ui-layout-button-close"></span> <span
+				id="open-east" class="ui-layout-button-close"></span>
+			<div class="h-b-east">右侧栏</div>
+		</div>
+	</div>
+
+	<div class="ui-layout-west"></div>
+
+	<div id="mainmap" class="ui-layout-center"></div>
+
+	<div class="ui-layout-east"></div>
+
+	<div class="ui-layout-south"></div>
 
 </body>
 </html>

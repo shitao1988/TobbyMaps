@@ -1,0 +1,114 @@
+/* page wide settings */
+*, html, body {
+margin: 0px;
+padding: 0px;
+border-style: none;
+font-family: Verdana, sans-serif;
+font-size: small;
+/*font: normal small/1.4em Verdana, sans-serif;*/
+}
+ img
+{  border-style: none;
+    
+}
+.olControlPanZoomBar div{
+    font-size:0 !important;
+}
+/* /page wide settings */
+
+/* pane-layout settings */
+.ui-layout-pane { /* all 'panes' */ 
+	background: #FFF; 
+	padding: 0px; 
+	overflow: hidden;
+} 
+
+.ui-layout-pane-south {
+	border-top: solid 1px #2e3436;
+}
+.ui-layout-pane-west {
+	border-right: solid 1px #3465a4;
+	background: #f3f3f0;
+}
+
+.ui-layout-pane-east {
+	border-left: solid 1px #3465a4;
+		background: #f3f3f0;
+}
+span.ui-layout-button-close {
+	position:	absolute;
+	bottom:		0;
+	width: 		20px;
+	height:		20px;
+	z-index:	2;
+	display:	block;
+	cursor: 	pointer;
+}
+/* /pane-layout settings */
+
+/* header pane settings */
+.edugis-heading {	
+	background:#006599 url(../images/headerback.png) repeat-x; 
+	height:59px  !important; 
+}
+.heading-top {
+	height: 39px;
+}
+#geo-search {
+position: absolute;
+right: 200px;
+top:7px;
+}
+.heading-bottom {
+	height: 20px;
+	font-size: 15px;
+}
+#close-east {
+	right:250px;
+	background: url(../images/close-east.png) no-repeat;
+}
+#close-west {
+	left:250px;
+	background: url(../images/close-west.png) no-repeat;
+}
+#open-west {
+ left: 0px;
+ background: url(../images/open-west.png) no-repeat;
+ display: none;
+}
+#open-east {
+ right: 0px;
+ background: url(../images/open-east.png) no-repeat;
+ display: none;
+} 
+.h-b-west {
+	width: 249px;
+	border-left: solid 1px #eeeeec;
+	
+	background: #eeeeec;
+
+	margin-top:1px;
+	text-align: center;	
+	
+}
+.h-b-east {
+	width: 249px;
+	border-right: solid 1px #eeeeec;
+	background: #eeeeec;
+
+	right:0px;
+	position:absolute;
+	top:39px;
+	margin-top:1px;
+	text-align: center;
+}
+.h-b-middle {
+	position:	absolute;
+	top:		40px;
+	height:		20px;
+	right:      280px;
+	z-index:	2;
+	display:	block;
+	cursor: 	pointer;
+}
+/* /header pane settings */
