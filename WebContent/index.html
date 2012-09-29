@@ -5,17 +5,20 @@
 <title>TobbyMaps</title>
 <link rel="stylesheet" type="text/css" href="css/lib/jqueryui/1.8/themes/base/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="css/layout.css" />
-
+<link rel="stylesheet" type="text/css" href="css/map.css" />
 
 <script type="text/javascript" src="js/lib/jquery/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/lib/jqueryui/1.8.6/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.layout.min-1.2.0.js"></script>
+<script type="text/javascript" src="js/lib/OpenLayers-2.12/lib/OpenLayers.js"></script>
 <script type="text/javascript" src="js/tbm/layout.js"></script>
+<script type="text/javascript" src="js/tbm/tbm.js"></script>
+<script type="text/javascript" src="js/tbm/sysmap/sysmap.js"></script>
 </head>
-<body>
+<body onload="tbm.sysmap.Sysmap.init()">
 	<div class="ui-layout-north edugis-heading">
 		<div class="heading-top">
-			<a href="."><img src="images/edugislogo.png" /></a>
+			<a href="."><img src="" /></a>
 			<div id="geo-search"></div>
 		</div>
 		<div class="heading-bottom">
@@ -32,7 +35,9 @@
 
 	<div class="ui-layout-west"></div>
 
-	<div id="mainmap" class="ui-layout-center"></div>
+	<div id="mainmap" class="ui-layout-center">
+	<div id="main-map"></div>
+	</div>
 
 	<div class="ui-layout-east"></div>
 
