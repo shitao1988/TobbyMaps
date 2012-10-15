@@ -1797,6 +1797,23 @@ OpenLayers.Map = OpenLayers.Class({
     },
 
     /**
+     * APIMethod: getMinZoom
+     * Returns the minimum zoom level for the current map view. If the base
+     * layer is configured with <wrapDateLine> set to true, this will be the
+     * first zoom level that shows no more than one world width in the current
+     * map viewport. Components that rely on this value (e.g. zoom sliders)
+     * should also listen to the map's "updatesize" event and call this method
+     * in the "updatesize" listener.
+     *
+     * Returns:
+     * {Number} Minimum zoom level that shows a map not wider than its
+     * <baseLayer>'s maxExtent. This is an Integer value, unless the map is
+     * configured with <fractionalZoom> set to true.
+     */
+    getMinZoom: function() {
+        return this.adjustZoom(0);
+    },
+    /**
      * Method: moveTo
      *
      * Parameters:
